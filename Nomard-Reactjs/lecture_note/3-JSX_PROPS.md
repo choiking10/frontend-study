@@ -166,6 +166,53 @@ function App() {
 }
 ```
 
+## Protection with PropType
+
+props가 내가 원하는 props인지를 확인해주는 툴  
+`prop-types`
+
+## 설치
+
+```console
+npm i prop-types
+```
+
+## 적용하기
+
+적용하고자하는 컴포넌트에 `propTypes` 옵션에 props의 조건을 명시할 수 있음.
+
+```javascript
+import PropTypes from "prop-types";
+// ...
+
+Food.propTypes = {
+  name: PropTypes.string.isRequired,
+  picture: PropTypes.string.isRequired,
+  rating: PropTypes.string.isRequired,
+};
+```
+
+### Error Check
+
+위의 코드를 돌려보면 아래와 같은 에러가 발생.
+
+```python
+index.js:1 Warning: Failed prop type: Invalid prop `rating` of type `number` supplied to `Food`, expected `string`.
+    in Food (at App.js:63)
+    in App (at src/index.js:5)
+```
+
+이는 Food의 rating이 숫자이기 때문  
+따라서 다음과 같이 수정
+
+```javascript
+Food.propTypes = {
+  name: PropTypes.string.isRequired,
+  picture: PropTypes.string.isRequired,
+  rating: PropTypes.number.isRequired,
+};
+```
+
 ## Reference
 
 ### 본 프로젝트의 코드는 아래 강의를 참고하여 작성된 것임을 밝힙니다
