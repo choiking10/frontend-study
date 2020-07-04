@@ -1,11 +1,11 @@
-## Component
+# Component
 
 HTML을 반환하는 함수
+component는 항상 `대문자`로 시작한다.
 
 ```javascript
 // App.js
 function App() {
-  // component 대문자로 시작한다.
   return (
     <div>
       <h1>App</h1>
@@ -19,7 +19,8 @@ function Potato() {
 ReactDOM.render(<App />, document.getElementById("root"));
 ```
 
-`<APP />`와 같은 형태로 Component를 사용함. 이런 형태를 JSX라고 함.
+`<App />`와 같은 형태로 Component를 사용할 수 있음.  
+이런 형태의 언어를 JSX라고 함.
 
 다음 처럼도 사용 가능
 
@@ -45,6 +46,30 @@ ReactDOM.render(<App /><Potato />, document.getElementById("root"));
 
 오직 `한가지`의 Component만 랜더링이 가능함.  
 따라서, 모든 컴포넌트는 App 안에 들어가야 함.
+
+# Properties (PROS)
+
+컴포넌트에게 `props`를 전달할 수 있음.  
+이는 일종의 Object로 컴포넌트에서 꺼내서 사용 가능함.
+
+## props 전달
+
+```javascript
+<Food fav="Kimchi" />
+```
+
+## props를 사용
+
+```javascript
+// 1. using props like javascript object
+function Food(props) {
+  return <h1>I like {props.fav}</h1>;
+}
+// 2. open props (2개 이상 props를 꺼내는 건 안되나?) Food({fav1}, {fav2}) 처럼 ㅠㅠ
+function Food({ fav }) {
+  return <h1>I like {fav}</h1>;
+}
+```
 
 # Reference
 
