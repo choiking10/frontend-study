@@ -4,19 +4,19 @@
 
 React의 초기 Setting 은 매우 복잡함. 이를 도와줄 `create-react-app`
 
-```
+```console
 npx create-react-app movie_app
 cd movie_app
 npm start
 ```
 
-사용가능한 명령어들은 `pakcage.json`을 참고하면됨.
+사용가능한 명령어들은 `package.json`을 참고하면됨.
 
 ---
 
 React의 크롬 개발자 도구 `React Developer Tools` 설치
 
-https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=ko-kr
+<https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=ko-kr>
 
 ## 필요없는 것들 삭제
 
@@ -49,7 +49,7 @@ export default App;
 
 아래와 같은 프로젝트에 직접적으로 상관없는 것들을 삭제
 
-```
+```console
 logo.svg
 serviceWorker.js
 index.css
@@ -57,14 +57,14 @@ App.test.js
 App.css
 ```
 
-# How does react work?
+## How does react work
 
 Virtual Document Object Model (DOM)
 
 - HTML에 직접 삽입
 
-# Reference
+## Reference
 
-## 본 프로젝트의 코드는 아래 강의를 참고하여 작성된 것임을 밝힙니다.
+## 본 프로젝트의 코드는 아래 강의를 참고하여 작성된 것임을 밝힙니다
 
-https://nomadcoders.co/react-fundamentals
+<https://nomadcoders.co/react-fundamentals>
