@@ -1,0 +1,92 @@
+:root {
+  --back-ground-color: #b3e5fc;
+  --font-color: #000000;
+  --select-color: #4d82cb;
+  --select-font-color: white;
+}
+nav {
+  background-color: var(--back-ground-color);
+  color: var(--font-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  font-size: 20px;
+}
+body {
+  margin: 0;
+  font-family: "Sourece Sans Pro";
+}
+a {
+  text-decoration: none;
+  color: var(--font-color);
+  font-weight: 600;
+}
+ul {
+  list-style: none;
+}
+
+.menus ul {
+  display: flex;
+  justify-content: space-around;
+}
+.menus ul li {
+  padding: 12px 8px;
+  border-radius: 4px;
+}
+.menus ul li:hover {
+  background-color: var(--select-color);
+  color: var(--select-font-color);
+}
+.menus ul li a:hover {
+  color: var(--select-font-color);
+}
+
+.icon ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0px;
+}
+.icon ul li {
+  padding: 0px 8px 0px 8px;
+}
+.menu_toggle {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .active {
+    display: none;
+  }
+  nav {
+    flex-direction: column;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+  }
+  .logo {
+    text-align: left;
+    width: 100%;
+    padding-left: 10px;
+  }
+  .menus {
+    width: 100%;
+  }
+  .menus ul {
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0px;
+    padding-left: 0px;
+  }
+  .menus ul li {
+    text-align: center;
+    border-radius: 0px;
+  }
+  .menu_toggle {
+    display: block;
+    position: absolute;
+    align-self: flex-end;
+    padding-right: 10px;
+  }
+}
