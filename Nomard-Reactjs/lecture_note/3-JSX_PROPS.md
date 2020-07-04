@@ -65,9 +65,65 @@ ReactDOM.render(<App /><Potato />, document.getElementById("root"));
 function Food(props) {
   return <h1>I like {props.fav}</h1>;
 }
-// 2. open props (2개 이상 props를 꺼내는 건 안되나?) Food({fav1}, {fav2}) 처럼 ㅠㅠ
+// 2. open props
 function Food({ fav }) {
   return <h1>I like {fav}</h1>;
+}
+// 3. open multiple
+function App() {
+  return (
+    <div>
+      <h1>Hello</h1>
+      <Food fav="Kimchi" fav2="ramen" />
+    </div>
+  );
+}
+function Food({ fav1, fav2 }) {
+  // {prop1, prop2, ...} like this
+  return (
+    <h1>
+      I like {fav1}, and {fav2}
+    </h1>
+  );
+}
+```
+
+# Dynamic Component Generation
+
+## Map and Array
+
+아는 내용이라 Skip
+
+## Map and Array on JSX
+
+JSX의 HTML 안에서 코드나 변수를 사용하고 싶을 때 `{}`를 사용할 수 있음.
+
+```javascript
+const foodILike = [
+  {
+    name: "Kimchi",
+    image:
+      "http://aeriskitchen.com/wp-content/uploads/2008/09/kimchi_bokkeumbap_02-.jpg",
+  },
+  //...
+];
+function Food({ fav, picture }) {
+  return (
+    <div>
+      <h2>I like {fav}</h2>
+      <img src={picture} />
+    </div>
+  );
+}
+function App() {
+  return (
+    <div>
+      <h1>Hello</h1>
+      {foodILike.map((dish) => (
+        <Food fav={dish.name} picture={dish.image} />
+      ))}
+    </div>
+  );
 }
 ```
 
