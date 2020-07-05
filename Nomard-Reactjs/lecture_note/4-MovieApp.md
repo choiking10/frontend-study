@@ -51,7 +51,7 @@ async와 await의 개념은 다른 강의나 구글링을 참고.
 ```
 
 여기서 다음과 같은 에러가 발생할 수 있음. 해결 방법은 아래를 참고  
-[Go to Access-Control-Allow-Origin Error](##Access-Control-Allow-Origin-Error)
+[Go to Access-Control-Allow-Origin Error](###Access-Control-Allow-Origin-Error)
 
 ES6 문법 중 아래는 정말 fancy 한듯. 가독성이 높은지는 조금 고민해볼만한 거 같기도하고
 
@@ -63,7 +63,7 @@ const {
 } = await axios.get("https://yts-proxy.now.sh/list_movies.json?sort_by=rating");
 ```
 
----
+## Rendering the Movies
 
 State가 필요하지 않는 컴포넌트의 경우는 굳이 Class Component를 쓸 필요없기 때문에 Function Component를 사용.
 
@@ -71,7 +71,7 @@ State가 필요하지 않는 컴포넌트의 경우는 굳이 Class Component를
 
 ```js
 // Movie.js를 새로 만들자
-function Movie({ id, year, title, summary, poster }) {
+function Movie({ id, year, title, summary, large_cover_image }) {
   return <h1>{title}</h1>;
 }
 
@@ -80,7 +80,7 @@ Movie.propTypes = {
   year: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   summary: PropTypes.string.isRequired,
-  poster: PropTypes.string.isRequired,
+  large_cover_image: PropTypes.string.isRequired,
 };
 
 export default Movie;
@@ -105,7 +105,7 @@ class App extends React.Component {
                     year={movie.year}
                     title={movie.title}
                     summary={movie.summary}
-                    poster={movie.poster}
+                    large_cover_image={movie.large_cover_image}
                   />
                 );
               })}
@@ -117,7 +117,62 @@ class App extends React.Component {
 }
 ```
 
-## Access-Control-Allow-Origin Error
+## Styling the Movies
+
+이제 랜더링을 좀더 멋지게 할수 있도록 꾸며보자.  
+스타일링이 가능하도록 css 파일을 만들고 각 파일에서 import 할 수 있음.  
+다만 이 강의에서는 CSS를 다루지 않음
+
+```js
+// App.js
+import "./App.jss"
+// ...
+  render() {
+    const { isLoading, movies } = this.state;
+    return (
+      <section class="container">
+        {isLoading ? (
+          <div class="loader">
+            <span class="loader__text">Loading...</span>
+          </div>
+        ) : (
+          <div class="movies">
+            {movies.map((movie) => {
+              return (
+                <Movie
+                  key={movie.id}
+                  id={movie.id}
+                  year={movie.year}
+                  title={movie.title}
+                  summary={movie.summary}
+                  large_cover_image={movie.large_cover_image}
+                />
+              );
+            })}
+          </div>
+        )}
+      </section>
+    );
+  }
+// ...
+
+// Movie.js
+import "./Movie.jss"
+function Movie({ id, year, title, summary, large_cover_image }) {
+  return (
+    <div class="movie">
+      <img src={large_cover_image} alt={title}></img>
+      <h3 class="movie__title">{title}</h3>
+      <h5 class="movie__year">{year}</h5>
+      <p class="movie__summary">{summary}</p>
+    </div>
+  );
+}
+```
+
+## Error
+
+### Access-Control-Allow-Origin Error
 
 proxy로 접속할 때 `Access-Control-Allow-Origin` 헤더가 없다는 에러가 발생.
 
