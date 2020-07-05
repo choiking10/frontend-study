@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/frontend-study/normad-react/static/css/main.83dc7efb.chunk.css",
-    "main.js": "/frontend-study/normad-react/static/js/main.67d3f9c2.chunk.js",
-    "main.js.map": "/frontend-study/normad-react/static/js/main.67d3f9c2.chunk.js.map",
+    "main.js": "/frontend-study/normad-react/static/js/main.e188e3ed.chunk.js",
+    "main.js.map": "/frontend-study/normad-react/static/js/main.e188e3ed.chunk.js.map",
     "runtime-main.js": "/frontend-study/normad-react/static/js/runtime-main.5ed527a0.js",
     "runtime-main.js.map": "/frontend-study/normad-react/static/js/runtime-main.5ed527a0.js.map",
     "static/js/2.ce898f91.chunk.js": "/frontend-study/normad-react/static/js/2.ce898f91.chunk.js",
     "static/js/2.ce898f91.chunk.js.map": "/frontend-study/normad-react/static/js/2.ce898f91.chunk.js.map",
     "index.html": "/frontend-study/normad-react/index.html",
-    "precache-manifest.1de12b72414137b555584161cddd39f2.js": "/frontend-study/normad-react/precache-manifest.1de12b72414137b555584161cddd39f2.js",
+    "precache-manifest.2a149c017b8023bb1f50209447297aec.js": "/frontend-study/normad-react/precache-manifest.2a149c017b8023bb1f50209447297aec.js",
     "service-worker.js": "/frontend-study/normad-react/service-worker.js",
     "static/css/main.83dc7efb.chunk.css.map": "/frontend-study/normad-react/static/css/main.83dc7efb.chunk.css.map",
     "static/js/2.ce898f91.chunk.js.LICENSE.txt": "/frontend-study/normad-react/static/js/2.ce898f91.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.5ed527a0.js",
     "static/js/2.ce898f91.chunk.js",
     "static/css/main.83dc7efb.chunk.css",
-    "static/js/main.67d3f9c2.chunk.js"
+    "static/js/main.e188e3ed.chunk.js"
   ]
 }

@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "06f16b3466e5fd3c3a32ce9f52594692",
+    "revision": "d2d30f89614eebc8c3cc7534080c0de2",
     "url": "/frontend-study/normad-react/index.html"
   },
   {
-    "revision": "66793327d1b3b9adde3a",
+    "revision": "a15cc2aa239ae93399eb",
     "url": "/frontend-study/normad-react/static/css/main.83dc7efb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/frontend-study/normad-react/static/js/2.ce898f91.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "66793327d1b3b9adde3a",
-    "url": "/frontend-study/normad-react/static/js/main.67d3f9c2.chunk.js"
+    "revision": "a15cc2aa239ae93399eb",
+    "url": "/frontend-study/normad-react/static/js/main.e188e3ed.chunk.js"
   },
   {
     "revision": "a95a6c9cc46566f0ef10",

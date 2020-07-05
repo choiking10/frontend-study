@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/frontend-study/normad-react/precache-manifest.1de12b72414137b555584161cddd39f2.js"
+  "/frontend-study/normad-react/precache-manifest.2a149c017b8023bb1f50209447297aec.js"
 );
 
 self.addEventListener('message', (event) => {
