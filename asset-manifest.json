@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/frontend-study/nomad-react/static/css/main.83dc7efb.chunk.css",
-    "main.js": "/frontend-study/nomad-react/static/js/main.e188e3ed.chunk.js",
-    "main.js.map": "/frontend-study/nomad-react/static/js/main.e188e3ed.chunk.js.map",
-    "runtime-main.js": "/frontend-study/nomad-react/static/js/runtime-main.516fea0e.js",
-    "runtime-main.js.map": "/frontend-study/nomad-react/static/js/runtime-main.516fea0e.js.map",
-    "static/js/2.ce898f91.chunk.js": "/frontend-study/nomad-react/static/js/2.ce898f91.chunk.js",
-    "static/js/2.ce898f91.chunk.js.map": "/frontend-study/nomad-react/static/js/2.ce898f91.chunk.js.map",
-    "index.html": "/frontend-study/nomad-react/index.html",
-    "precache-manifest.7ab56dadeffd625851ebd9a10fd64af7.js": "/frontend-study/nomad-react/precache-manifest.7ab56dadeffd625851ebd9a10fd64af7.js",
-    "service-worker.js": "/frontend-study/nomad-react/service-worker.js",
-    "static/css/main.83dc7efb.chunk.css.map": "/frontend-study/nomad-react/static/css/main.83dc7efb.chunk.css.map",
-    "static/js/2.ce898f91.chunk.js.LICENSE.txt": "/frontend-study/nomad-react/static/js/2.ce898f91.chunk.js.LICENSE.txt"
+    "main.css": "/frontend-study/static/css/main.695ef44a.chunk.css",
+    "main.js": "/frontend-study/static/js/main.d9d89e02.chunk.js",
+    "main.js.map": "/frontend-study/static/js/main.d9d89e02.chunk.js.map",
+    "runtime-main.js": "/frontend-study/static/js/runtime-main.b579e3af.js",
+    "runtime-main.js.map": "/frontend-study/static/js/runtime-main.b579e3af.js.map",
+    "static/js/2.f0a08c44.chunk.js": "/frontend-study/static/js/2.f0a08c44.chunk.js",
+    "static/js/2.f0a08c44.chunk.js.map": "/frontend-study/static/js/2.f0a08c44.chunk.js.map",
+    "index.html": "/frontend-study/index.html",
+    "precache-manifest.e07314a1c1cb0d6f2feae1cc0616e70d.js": "/frontend-study/precache-manifest.e07314a1c1cb0d6f2feae1cc0616e70d.js",
+    "service-worker.js": "/frontend-study/service-worker.js",
+    "static/css/main.695ef44a.chunk.css.map": "/frontend-study/static/css/main.695ef44a.chunk.css.map",
+    "static/js/2.f0a08c44.chunk.js.LICENSE.txt": "/frontend-study/static/js/2.f0a08c44.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.516fea0e.js",
-    "static/js/2.ce898f91.chunk.js",
-    "static/css/main.83dc7efb.chunk.css",
-    "static/js/main.e188e3ed.chunk.js"
+    "static/js/runtime-main.b579e3af.js",
+    "static/js/2.f0a08c44.chunk.js",
+    "static/css/main.695ef44a.chunk.css",
+    "static/js/main.d9d89e02.chunk.js"
   ]
 }
