@@ -24,7 +24,11 @@ Class Component를 사용해야하는 이유: `state` 때문!
 
 `state`는 Object
 
-Data가 바귀기 때문에 `state`를 사용해야 함. 바꿀 데이터를 `state`통해서 관리 가능.
+Data가 바귀기 때문에 `state`를 사용해야 함.
+
+바꿀 데이터를 `state`통해서 관리 가능.
+
+나중에 State를 추가할수도 있음.
 
 아래와 같이 동적으로 변하는 코드를 만들어 보자.
 
@@ -150,6 +154,32 @@ Life Cycle은 생성부터 호출, 그리고 소멸할 때까지의 Cycle을 의
    - Component가 소멸하기 전에 호출됨.
    - 호출된다는데 실험결과 호출이안되는 경우도 있는듯?
    - 니콜라스가 믿으라고 했으나 사용전에는 항상 확인할 것.
+
+### 적용해 보기
+
+Mount 후 Data를 fetching 하기 위해 `componentDidMount()` 사용해보기
+
+```js
+class App extends React.Component {
+  state = {
+    isLoading: true,
+    movies: [],
+  };
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ isLoading: false });
+    }, 4000);
+  }
+  render() {
+    const { isLoading } = this.state; // 매우 cool 한 문법인 걸
+    return (
+      <div>
+        <div>{isLoading ? "Loading..." : "We are ready!"}</div>
+      </div>
+    );
+  }
+}
+```
 
 ## Reference
 
