@@ -1,11 +1,5 @@
 # ReactJS로 영화 웹 서비스 만들기
 
-## Reference
-
-### 본 프로젝트의 코드는 아래 강의를 참고하여 작성된 것임을 밝힙니다
-
-<https://nomadcoders.co/react-fundamentals>
-
 ## 목차
 
 - [1-SetUp](lecture_note/1-SetUp.md)
@@ -25,3 +19,17 @@
 - [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 - [Json Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh/related?hl=ko&hc_location=ufi)
 - [Eye Dropper](https://chrome.google.com/webstore/detail/eye-dropper/hmdcmlfkchdmnmnmheododdhjedfccka)
+
+## 결과물
+
+![final result](lecture_note/images/3-State/final-result.jpg)
+
+## Reference
+
+### 본 프로젝트의 코드는 아래 강의를 참고하여 작성된 것임을 밝힙니다
+
+<https://nomadcoders.co/react-fundamentals>
+
+### 본 프로젝트가 Clone 한 사이트 UI
+
+<https://dribbble.com/shots/2442798-Movie-Application>
