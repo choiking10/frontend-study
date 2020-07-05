@@ -63,14 +63,8 @@ Virtual Document Object Model (DOM)
 
 - HTML에 직접 삽입
 
-## 이 강의에서 추가로 설치되는 것들
-
-```console
-npm i prop-types
-```
-
 ## Reference
 
-## 본 프로젝트의 코드는 아래 강의를 참고하여 작성된 것임을 밝힙니다
+### 본 프로젝트의 코드는 아래 강의를 참고하여 작성된 것임을 밝힙니다
 
 <https://nomadcoders.co/react-fundamentals>

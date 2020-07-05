@@ -11,3 +11,15 @@
 - [1-SetUp](lecture_note/1-SetUp.md)
 - [2-JSX_PROPS](lecture_note/2-JSX_PROPS.md)
 - [3-State](lecture_note/3-State.md)
+
+## 이 강의에서 추가로 설치되는 것들
+
+### npm
+
+- npm i prop-types
+- npm i axios
+
+### chrome extension
+
+- [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+- [Json Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh/related?hl=ko&hc_location=ufi)
