@@ -117,6 +117,40 @@ minus = () => {
 
 Life Cycle은 생성부터 호출, 그리고 소멸할 때까지의 Cycle을 의미.
 
+![Life Cycle](images/3-State/ReactComponentLifecycle.jpg)
+
+### Mounting
+
+1. **constructor()**
+
+   - 다음과 같은 상황에서 호출됨.
+   - component가 mount 될 때
+   - component가 screen에 표시될 때
+
+2. **render()**
+3. **componentDidMount()**
+
+   - 이 component가 **처음** render 됐다는 사실을 알려주는 함수.
+
+### Update
+
+1. shouldComponentUpdate()
+
+   - Component가 업데이트가 되어야하는지 결정함.
+
+2. **render()**
+3. **componentDidUpdate()**
+
+   - Component의 update가 완료 됐다는 사실을 알려주는 함수.
+
+### Unmounting
+
+1. **componentWillUnmount()**
+
+   - Component가 소멸하기 전에 호출됨.
+   - 호출된다는데 실험결과 호출이안되는 경우도 있는듯?
+   - 니콜라스가 믿으라고 했으나 사용전에는 항상 확인할 것.
+
 ## Reference
 
 ### 본 프로젝트의 코드는 아래 강의를 참고하여 작성된 것임을 밝힙니다
