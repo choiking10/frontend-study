@@ -64,3 +64,9 @@ li.movie {
   -webkit-line-clamp: 3; /* 라인수 */
   -webkit-box-orient: vertical;
 }
+
+@media only screen and (max-width: 1300px) {
+  li.movie {
+    width: 80%;
+  }
+}
