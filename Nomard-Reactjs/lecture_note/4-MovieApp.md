@@ -170,6 +170,56 @@ function Movie({ id, year, title, summary, large_cover_image }) {
 }
 ```
 
+## Adding Genres
+
+```js
+//App.js - genres 추가
+  //...
+  render() {
+    const { isLoading, movies } = this.state;
+    return (
+      //...
+          <div className="movies">
+            {movies.map((movie) => {
+              return (
+                <Movie
+                  key={movie.id}
+                  id={movie.id}
+                  year={movie.year}
+                  title={movie.title}
+                  summary={movie.summary}
+                  large_cover_image={movie.large_cover_image}
+                  genres={movie.genres}
+                />
+              );
+            })}
+          </div>
+      //...
+    );
+  }
+  //...
+// Movie.js
+function Movie({ id, year, title, summary, large_cover_image, genres }) {
+  return (
+    // ...
+      <ul>
+        {genres.map((genre, index) => (
+          <li key={index} className="generes">
+            {genre}
+          </li>
+        ))}
+      </ul>
+    // ...
+  );
+}
+
+Movie.propTypes = {
+  // ...
+  genres: PropTypes.arrayOf(PropTypes.string).isRequired,
+  // 특정 타입의 배열은 다음과 같이 처리할 수 있음.
+};
+```
+
 ## Error
 
 ### Access-Control-Allow-Origin Error
