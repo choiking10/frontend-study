@@ -1,17 +1,25 @@
 body {
-  color: white;
   margin: 0;
 }
-ul {
-  padding-left: 0;
-}
-h3,
-h4 {
+.root {
+  display: flex;
+  justify-content: flex-start;
   margin: 0;
 }
 .container {
   display: flex;
-  justify-content: flex-end;
+}
+.container a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+h3,
+h4 {
+  margin: 0;
 }
 .movies {
   background-color: #eaecf4;
