@@ -8,5 +8,5 @@ https://nomadcoders.co/react-fundamentals
 
 ## 목차
 
-- [2-SetUp](lecture_note/2-SetUp.md)
-- [3-JSX_PROPS](lecture_note/3-JSX_PROPS.md)
+- [1-SetUp](lecture_note/1-SetUp.md)
+- [2-JSX_PROPS](lecture_note/2-JSX_PROPS.md)
