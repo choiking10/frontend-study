@@ -1,16 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
+import useInput from "./useInput/useInput";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(1);
-  const increaseCount = () => setCount(count + 1);
-  const decreaseCount = () => setCount(count - 1);
-
+  const maxLen = (value) => value.length < 10;
+  const name = useInput("Mr.", maxLen);
   return (
     <div className="App">
-      <h1>Hello Count: {count}</h1>
-      <button onClick={increaseCount}>Increment</button>
-      <button onClick={decreaseCount}>Decrement</button>
+      <h1>Hello</h1>
+      {/* same to <input placeholder="Name" value={name.value} onChange={name.onChange} />  */}
+      <input placeholder="Name" {...name} />
     </div>
   );
 }
