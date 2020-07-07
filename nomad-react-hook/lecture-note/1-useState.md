@@ -109,6 +109,73 @@ function App() {
 - useState를 사용하여 독립적인 Hook을 만들기 쉽다는 것.
 - `{...dict}`를 하면 자동으로 unpacking하여 property로 변환해준다는 것.
 
+## useTabs
+
+### 목적
+
+tab을 누를때마다 contents가 변경되도록 수정
+
+### 구현
+
+useTabs Hook Code
+
+```js
+const useTabs = (initialTab, allTabs) => {
+  const [currentIndex, setCurrentIndex] = useState(initialTab);
+  return {
+    currentItem: allTabs[currentIndex],
+    changeItem: setCurrentIndex,
+  };
+};
+```
+
+useTabs Hook Apply Code
+
+```js
+function App() {
+  const { currentItem, changeItem } = useTabs(0, content);
+  return (
+    <div className="App">
+      <h1>Hello</h1>
+      {content.map((section, index) => (
+        <button key={index} onClick={() => changeItem(index)}>
+          {section.tab}
+        </button>
+      ))}
+      <div>{currentItem.content}</div>
+    </div>
+  );
+}
+```
+
+
+## Error
+
+### useState is called Conditionally Error
+
+에러가 발생한 지점.
+
+```js
+const useTabs = (initialTab, allTabs) => {
+  if (!allTabs || Array.isArray(allTabs)) {
+    return;
+  }
+  const [currentIndex, setCurrentIndex] = useState(initialTab);
+  return {
+    currentItem: allTabs[currentIndex],
+    changeItem: setCurrentIndex,
+  };
+};
+```
+
+에러 로그
+
+```log
+Line 19:43: React Hook "useState" is called conditionally. React Hooks must be called in the exact same order in every component render. Did you accidentally call a React Hook after an early return?  react-hooks/rules-of-hooks
+```
+
+아직 해결되지 않았음. ㅠㅠ
+
 ## Reference
 
 ### 본 프로젝트는 아래의 강의들을 기반으로 작성되었음을 밝힙니다
